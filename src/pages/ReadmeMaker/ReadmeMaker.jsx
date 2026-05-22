@@ -175,41 +175,6 @@ export default function ReadmeMaker() {
           </div>
         </div>
 
-        <div className="main" style={{ height: 'calc(100vh - 128px)' }}>
-          <div className={`mobile-panel-wrapper${activeMobileTab === 'setup' ? ' active' : ''}`}>
-            <Sidebar
-              sectionState={sectionState}
-              toggleSection={toggleSection}
-              selectedTechs={selectedTechs}
-              toggleTech={toggleTech}
-              applyTemplate={handleApplyTemplate}
-              activeTemplate={activeTemplate}
-            />
-          </div>
-          <div className={`mobile-panel-wrapper${activeMobileTab === 'editor' ? ' active' : ''}`}>
-            <EditorPanel
-              formData={formData}
-              updateField={updateField}
-              sectionState={sectionState}
-              selectedTechs={selectedTechs}
-              toggleTech={toggleTech}
-              selectedBadges={selectedBadges}
-              toggleBadge={toggleBadge}
-              screenshots={screenshots}
-              addScreenshots={addScreenshots}
-              removeScreenshot={removeScreenshot}
-            />
-          </div>
-          <div className={`mobile-panel-wrapper${activeMobileTab === 'preview' ? ' active' : ''}`}>
-            <PreviewPanel
-              currentMd={currentMd}
-              formData={formData}
-              sectionState={sectionState}
-              selectedTechs={selectedTechs}
-              screenshots={screenshots}
-            />
-          </div>
-        </div>
 
         {/* Mobile Global Scroll-to-Top */}
         <button
